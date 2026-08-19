@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Eric Bouchoc | Case Studies Portfolio</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      color: #1f2430;
+      background: #ffffff;
+      line-height: 1.6;
+    }
+
+    .container {
+      width: min(1180px, 90%);
+      margin: 0 auto;
+    }
+
+    header {
+      padding: 72px 0 46px;
+      border-bottom: 1px solid #e6e6e6;
+    }
+
+    .eyebrow {
+      color: #4d148c;
+      font-size: 14px;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      margin-bottom: 18px;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: clamp(42px, 7vw, 78px);
+      line-height: 1.02;
+      letter-spacing: -0.04em;
+    }
+
+    .intro {
+      max-width: 820px;
+      margin-top: 24px;
+      font-size: 20px;
+      color: #555b66;
+    }
+
+    .projects {
+      padding: 64px 0 90px;
+    }
+
+    .section-title {
+      font-size: 30px;
+      margin: 0 0 30px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 28px;
+    }
+
+    .card {
+      border: 1px solid #dddddf;
+      border-radius: 14px;
+      overflow: hidden;
+      text-decoration: none;
+      color: inherit;
+      background: #fff;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 16px 34px rgba(0,0,0,0.09);
+    }
+
+    .image-placeholder {
+      aspect-ratio: 16 / 9;
+      background:
+        linear-gradient(135deg, #4d148c, #7b42aa);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      font-weight: 700;
+      font-size: 18px;
+      letter-spacing: 0.04em;
+    }
+
+    .card-content {
+      padding: 26px 28px 30px;
+    }
+
+    .company {
+      color: #4d148c;
+      font-size: 13px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+    }
+
+    .card h2 {
+      font-size: 27px;
+      line-height: 1.15;
+      margin: 10px 0 10px;
+    }
+
+    .card p {
+      margin: 0;
+      color: #626773;
+      font-size: 16px;
+    }
+
+    .view {
+      margin-top: 20px;
+      font-weight: 700;
+      color: #4d148c;
+    }
+
+    footer {
+      border-top: 1px solid #e6e6e6;
+      padding: 30px 0 50px;
+      color: #777c84;
+      font-size: 14px;
+    }
+
+    @media (max-width: 760px) {
+      header {
+        padding-top: 48px;
+      }
+
+      .grid {
+        grid-template-columns: 1fr;
+      }
+
+      .intro {
+        font-size: 18px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <div class="container">
+      <div class="eyebrow">Case Studies Portfolio</div>
+
+      <h1>Eric Bouchoc</h1>
+
+      <p class="intro">
+        Creative leadership, experience design, and organizational transformation.
+        I identify complex business and communication problems, create clarity,
+        and build solutions people can actually use.
+      </p>
+    </div>
+  </header>
+
+  <main class="projects">
+    <div class="container">
+
+      <h2 class="section-title">Selected Case Studies</h2>
+
+      <div class="grid">
+
+        <a class="card" href="#">
+          <div class="image-placeholder">FEDEX CREATIVE TRANSFORMATION</div>
+          <div class="card-content">
+            <div class="company">FedEx</div>
+            <h2>From Production Team to Strategic Creative Capability</h2>
+            <p>
+              Building sustainable internal creative capability while reducing
+              external dependency and expanding what the organization could deliver.
+            </p>
+            <div class="view">View case study →</div>
+          </div>
+        </a>
+
+        <a class="card" href="#">
+          <div class="image-placeholder">FEDEX LEADERSHIP ENABLEMENT</div>
+          <div class="card-content">
+            <div class="company">FedEx</div>
+            <h2>Turning Organizational Knowledge Into a Leadership System</h2>
+            <p>
+              Creating a clear 30 / 60 / 90 / 120-day path from fragmented
+              information and unclear expectations.
+            </p>
+            <div class="view">View case study →</div>
+          </div>
+        </a>
+
+        <a class="card" href="#">
+          <div class="image-placeholder">FEDEX SAFETY TRAINING</div>
+          <div class="card-content">
+            <div class="company">FedEx</div>
+            <h2>Safety Training People Would Remember</h2>
+            <p>
+              Reframing a required training problem around attention, recall,
+              storytelling, and employee engagement.
+            </p>
+            <div class="view">View case study →</div>
+          </div>
+        </a>
+
+        <a class="card" href="#">
+          <div class="image-placeholder">HUMANA UX</div>
+          <div class="card-content">
+            <div class="company">Humana</div>
+            <h2>Clarifying Supplemental Health Plans A-D</h2>
+            <p>
+              Simplifying a complex healthcare decision while creating a clearer,
+              more consistent digital experience.
+            </p>
+            <div class="view">View case study →</div>
+          </div>
+        </a>
+
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="container">
+      © 2026 Eric Bouchoc · Creative Leadership & Experience Design
+    </div>
+  </footer>
+
+</body>
+</html>
